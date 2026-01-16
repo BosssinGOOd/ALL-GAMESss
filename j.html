@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ALL GAMES</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header-content">
+      <h1>ALL GAMES</h1>
+      <p>Все виды игр в одном месте</p>
+      <button id="toggleHeader" class="toggle-header">⬆ Свернуть</button>
+    </div>
+  </header>
+
+  <div id="favoriteContainer">
+    <button id="openFavorites">❤ <span id="favoriteCounter">0</span></button>
+    <div id="totalGames">0</div>
+  </div>
+
+  <section class="cards-section">
+    <h2>Каталог игр</h2>
+
+    <select id="categoryFilter">
+      <option value="all">Все</option>
+      <option value="classic">Классика</option>
+      <option value="fantasy">Шутеры</option>
+      <option value="detective">Хоррор</option>
+    </select>
+
+    <div id="cardsContainer" class="cards-grid"></div>
+  </section>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <button class="close-btn">&times;</button>
+      <img id="modalImg">
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc"></p>
+    </div>
+  </div>
+
+  <div id="favoritesModal" class="modal hidden">
+    <div class="modal-content">
+      <button class="close-btn" id="closeFavorites">&times;</button>
+      <h3>Любимые игры</h3>
+      <div id="favoritesList"></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">ALL GAMES</div>
+      <div class="footer-links">
+        <a href="с.html" class="community-btn">Сообщество</a>
+      </div>
+      <div class="footer-copy">© 2026 ALL GAMES</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
